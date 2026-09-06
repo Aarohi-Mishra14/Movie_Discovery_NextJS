@@ -1,0 +1,84 @@
+.mood-matcher {
+  padding: 32px 0 64px;
+}
+
+.mood-intro {
+  max-width: 480px;
+  margin-bottom: 28px;
+}
+
+.mood-intro svg {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.mood-intro h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mood-intro p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.mood-form {
+  display: flex;
+  gap: 10px;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+.mood-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.mood-form input:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.mood-form button {
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background-color: var(--color-accent);
+  color: #1a1305;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast);
+}
+
+.mood-form button:hover:not(:disabled) {
+  background-color: #e2b466;
+}
+
+.mood-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mood-result-caption {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.mood-result-card {
+  max-width: 220px;
+}
+
+@media (max-width: 640px) {
+  .mood-form {
+    flex-direction: column;
+  }
+}
