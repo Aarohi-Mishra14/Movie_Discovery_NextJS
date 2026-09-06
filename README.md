@@ -4,6 +4,8 @@ The Next.js 15 version of my Movie Discovery project. Same app, same idea - a mi
 
 Did this as a follow-up sprint specifically to learn SSR, the difference between Server and Client Components, dynamic routing, and SEO metadata — stuff you don't really get until you rebuild something you already made and see what changes.
 
+🔗 Live demo: https://movie-discovery-next-js.vercel.app
+
 ## What's different from the original
 
 The original was a single-page app - one URL, everything switching via internal state. This version actually uses real routes now (`/`, `/movies`, `/movie/[id]`, `/search`, `/favorites`, `/mood-matcher`) and the initial data fetch happens on the server before the page even reaches your browser, instead of fetching after the page loads like the old version did.
